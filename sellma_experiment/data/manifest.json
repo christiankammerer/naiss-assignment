@@ -1,0 +1,46 @@
+{
+  "chars_per_corpus": 30000000,
+  "vocab": "\n abcdefghijklmnopqrstuvwxyzåäöæø",
+  "revisions": {
+    "wikimedia/wikipedia": "b04c8d1ceb2f5cd4588862100d08de323dccfbaa",
+    "codeparrot/codeparrot-clean-valid": "4db92d2ec0c1b4c41eeb439cfae16854511d9dcd"
+  },
+  "corpora": {
+    "python": {
+      "source": [
+        "codeparrot/codeparrot-clean-valid",
+        null
+      ],
+      "documents": 4516,
+      "chars": 30000000,
+      "letters_used": "abcdefghijklmnopqrstuvwxyzäåæöø"
+    },
+    "swedish": {
+      "source": [
+        "wikimedia/wikipedia",
+        "20231101.sv"
+      ],
+      "documents": 4676,
+      "chars": 30000000,
+      "letters_used": "abcdefghijklmnopqrstuvwxyzäåæöø"
+    },
+    "norwegian": {
+      "source": [
+        "wikimedia/wikipedia",
+        "20231101.no"
+      ],
+      "documents": 4925,
+      "chars": 30000000,
+      "letters_used": "abcdefghijklmnopqrstuvwxyzäåæöø"
+    },
+    "danish": {
+      "source": [
+        "wikimedia/wikipedia",
+        "20231101.da"
+      ],
+      "documents": 6514,
+      "chars": 30000000,
+      "letters_used": "abcdefghijklmnopqrstuvwxyzäåæöø"
+    }
+  }
+}

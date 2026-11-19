@@ -1,0 +1,14 @@
+# Large binaries: model weights and tokenised data (rebuild with sellma_experiment/prepare_data.py / train.py)
+*.npz
+*.bin
+*.pt
+
+# Archives, installers and Windows download metadata
+*.zip
+*.deb
+*:Zone.Identifier
+
+# Environment and caches
+runs/
+.venv/
+__pycache__/

@@ -1,0 +1,11 @@
+Observations: the strongest clue is the spectrum of layer 0's value matrix, which reads the character and position embeddings almost directly.
+
+- **Singular values of W_v.0:** 1.97, 1.75, … 1.209, 1.137, 1.094, 0.943, then a sharp drop to 0.739, 0.696, 0.672, 0.661 … 0.635. That flat tail of about 0.64–0.70 is the random-initialisation bulk. About 30 directions stand clearly above it.
+- **Why 30 matters:** layer 0 applies LayerNorm first, which removes the mean, so a set of k used characters gives about k−1 useful directions. 30 directions fits k ≈ 31: newline, space and a–z (28) plus three extra letters, either å/ä/ö or æ/ø/å. Python would use only about 28 characters, so it should show about 27 directions, with the unused extra letters left at random-init size. Weight decay only shrinks them by about 4% over training, so they would not stand out.
+- **Other matrices:** W_q.0 and W_k.0 (largest singular values 2.9 and 3.7) and W_fc.0 (8.43, then about 4.5) decline smoothly with no clean break. That is expected, because they also read the position embeddings.
+- **Attention heads:** layer 0 head 3 has a much larger query-key product norm (12.5, against 3–8 for the others), so it is a sharp, probably position-based head, which every corpus would produce. I found nothing structural pointing to Python, such as a head specialised for indentation.
+
+Reasoning: an alphabet of about 31 used characters fits the three Scandinavian corpora better than Python's 28, so Python gets the lowest probability. I could not tell Swedish (extra letters å/ä/ö) from Norwegian or Danish (æ/ø/å) from the weights. Each uses three extra letters at similar frequencies, and without the embeddings I can't tell which letter each direction belongs to. Within the Scandinavian group the choice is close to a guess. I lean slightly towards Danish and Norwegian over Swedish because two of the three corpora share the same extra letters, not because of any specific evidence.
+
+corpus: danish
+probabilities: python=0.16 swedish=0.27 norwegian=0.27 danish=0.30

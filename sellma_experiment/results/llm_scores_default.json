@@ -1,0 +1,85 @@
+{
+  "options": {
+    "n": 8,
+    "correct": 1,
+    "accuracy": 0.125,
+    "chance": 0.25,
+    "p_value_vs_chance": 0.8998870849609375,
+    "scandinavian": {
+      "n": 6,
+      "correct": 1,
+      "accuracy": 0.16666666666666666,
+      "chance": 0.3333333333333333,
+      "p_value_vs_chance": 0.9122085048010974
+    },
+    "confusion": {
+      "python": {
+        "python": 0,
+        "swedish": 0,
+        "norwegian": 0,
+        "danish": 2
+      },
+      "swedish": {
+        "python": 1,
+        "swedish": 1,
+        "norwegian": 0,
+        "danish": 0
+      },
+      "norwegian": {
+        "python": 0,
+        "swedish": 2,
+        "norwegian": 0,
+        "danish": 0
+      },
+      "danish": {
+        "python": 1,
+        "swedish": 1,
+        "norwegian": 0,
+        "danish": 0
+      }
+    },
+    "mean_confidence": {
+      "when_correct": 0.33,
+      "when_wrong": 0.31857142857142856,
+      "random_control": 0.26
+    },
+    "brier": 0.8035,
+    "random_control_answers": {
+      "control_random": "danish"
+    },
+    "per_model": {
+      "model_A": {
+        "truth": "swedish",
+        "predicted": "python"
+      },
+      "model_B": {
+        "truth": "norwegian",
+        "predicted": "swedish"
+      },
+      "model_C": {
+        "truth": "danish",
+        "predicted": "swedish"
+      },
+      "model_D": {
+        "truth": "danish",
+        "predicted": "python"
+      },
+      "model_E": {
+        "truth": "swedish",
+        "predicted": "swedish"
+      },
+      "model_F": {
+        "truth": "norwegian",
+        "predicted": "swedish"
+      },
+      "model_G": {
+        "truth": "python",
+        "predicted": "danish"
+      },
+      "model_H": {
+        "truth": "python",
+        "predicted": "danish"
+      }
+    }
+  }
+}

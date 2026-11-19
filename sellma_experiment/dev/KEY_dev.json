@@ -1,0 +1,152 @@
+{
+  "model_dev": {
+    "corpus": "swedish",
+    "seed": 100,
+    "heads": {
+      "L0H0": {
+        "label": "broad",
+        "induction": 0.005,
+        "previous": 0.01,
+        "mean_distance": 17.71
+      },
+      "L0H1": {
+        "label": "local",
+        "induction": 0.0,
+        "previous": 0.024,
+        "mean_distance": 2.24
+      },
+      "L0H2": {
+        "label": "local",
+        "induction": 0.001,
+        "previous": 0.03,
+        "mean_distance": 4.57
+      },
+      "L0H3": {
+        "label": "previous",
+        "induction": 0.0,
+        "previous": 0.998,
+        "mean_distance": 1.04
+      },
+      "L0H4": {
+        "label": "broad",
+        "induction": 0.004,
+        "previous": 0.031,
+        "mean_distance": 17.78
+      },
+      "L0H5": {
+        "label": "broad",
+        "induction": 0.003,
+        "previous": 0.162,
+        "mean_distance": 10.37
+      },
+      "L1H0": {
+        "label": "broad",
+        "induction": 0.002,
+        "previous": 0.156,
+        "mean_distance": 5.68
+      },
+      "L1H1": {
+        "label": "local",
+        "induction": 0.001,
+        "previous": 0.24,
+        "mean_distance": 3.29
+      },
+      "L1H2": {
+        "label": "broad",
+        "induction": 0.003,
+        "previous": 0.168,
+        "mean_distance": 5.58
+      },
+      "L1H3": {
+        "label": "broad",
+        "induction": 0.002,
+        "previous": 0.201,
+        "mean_distance": 6.09
+      },
+      "L1H4": {
+        "label": "broad",
+        "induction": 0.002,
+        "previous": 0.197,
+        "mean_distance": 6.61
+      },
+      "L1H5": {
+        "label": "broad",
+        "induction": 0.0,
+        "previous": 0.135,
+        "mean_distance": 5.2
+      },
+      "L2H0": {
+        "label": "broad",
+        "induction": 0.002,
+        "previous": 0.155,
+        "mean_distance": 7.39
+      },
+      "L2H1": {
+        "label": "broad",
+        "induction": 0.004,
+        "previous": 0.122,
+        "mean_distance": 15.14
+      },
+      "L2H2": {
+        "label": "broad",
+        "induction": 0.003,
+        "previous": 0.133,
+        "mean_distance": 6.56
+      },
+      "L2H3": {
+        "label": "broad",
+        "induction": 0.003,
+        "previous": 0.156,
+        "mean_distance": 8.97
+      },
+      "L2H4": {
+        "label": "broad",
+        "induction": 0.003,
+        "previous": 0.168,
+        "mean_distance": 7.43
+      },
+      "L2H5": {
+        "label": "broad",
+        "induction": 0.001,
+        "previous": 0.204,
+        "mean_distance": 5.97
+      },
+      "L3H0": {
+        "label": "copy",
+        "induction": 0.508,
+        "previous": 0.016,
+        "mean_distance": 46.25
+      },
+      "L3H1": {
+        "label": "broad",
+        "induction": 0.007,
+        "previous": 0.052,
+        "mean_distance": 18.89
+      },
+      "L3H2": {
+        "label": "broad",
+        "induction": 0.007,
+        "previous": 0.115,
+        "mean_distance": 14.66
+      },
+      "L3H3": {
+        "label": "broad",
+        "induction": 0.005,
+        "previous": 0.099,
+        "mean_distance": 17.19
+      },
+      "L3H4": {
+        "label": "broad",
+        "induction": 0.004,
+        "previous": 0.085,
+        "mean_distance": 13.23
+      },
+      "L3H5": {
+        "label": "broad",
+        "induction": 0.008,
+        "previous": 0.045,
+        "mean_distance": 25.36
+      }
+    }
+  }
+}
